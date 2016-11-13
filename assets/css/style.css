@@ -29,17 +29,17 @@ h1 {
 	margin-bottom: 0;
 	margin-top: 0;
 	margin-left: 5%;
-	font-size: 2em;
+	font-size: 1.75em;
 
 }
 h2 {
-	font-size: 1.75em;
+	font-size: 1.5em;
 	padding: 10px 10px 0px 10px;
 	margin-top: 0;
 	margin-bottom: 0;
 }
 h3 {
-	font-size: 1.4em;
+	font-size: 1.3em;
 	padding: 10px 10px 0px 10px;
 	margin: 0;
 }
@@ -72,7 +72,7 @@ input {
 }
 .portContent {
 	padding: 15px;
-
+	overflow: auto;
 }
 .portSpace {
 	position: relative;
@@ -88,7 +88,7 @@ input {
 .portSpace h3 {
 	background-color: #4aaaa5;
 	text-align: center;
-	font-size: 1.3em;
+	font-size: 1.2em;
 	color: #ffffff;
 	position: absolute;
 	bottom: 15px;
@@ -109,7 +109,7 @@ input {
 .main {
 	clear: both;
 	overflow: auto;
-	margin: 15px 5% 15px;
+	margin: 15px 5%;
 	width: 960px;
 	flex: 1;
 }
@@ -207,7 +207,6 @@ input {
 	.portSpace img{
 		height: 325px;
 		width: 351px;
-
 	}
 	.portSpace {
 		padding: 15px;
@@ -218,9 +217,71 @@ input {
 }
 
 @media screen and (max-width: 768px) {
-	
+	h1 {
+		width: 225px;
+	}
+	.main {
+		width: 600px;
+	}
+	.content {
+		width: 480px;
+	}
+	.socialConnect {
+		width: 480px;
+		padding: 0 10px;
+		float: left;
+		margin-top: 15px;
+		text-align: left;
+	}
+	.portContent {
+		padding: 0;
+	}
+	.portSpace {
+		padding: 5px;
+	}
+	.portSpace img{
+		height: 193px;
+		width: 210px;
+	}
+	.portSpace h3 {
+		margin: 5px;
+	}
+	#profileImg {
+		height: 65%;
+		width: 65%;
+	}
+	.topPageNav {
+	padding: 10px;
+	}
 }
 
 @media screen and (max-width: 640px) {
-	
+	h1 {
+		width: 100%; 
+		margin: 0;
+	}
+	.topPageNav {
+		padding: 10px;
+		float: none;
+		overflow: auto;
+		text-align: center;
+		margin: 0;
+	}
+	.main  {
+		width: 450px;
+	}
+	.content {
+		width: 100%;
+	}
+	.socialConnect {
+		width: 100%;
+	}
+	.portSpace img{
+		height: 325px;
+		width: 351px;
+	}
+	#profileImg {
+		width: 100%;
+	}
+
 }
