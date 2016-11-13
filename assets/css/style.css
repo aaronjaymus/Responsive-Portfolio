@@ -11,6 +11,7 @@ body {
 	min-height: 100%;	
 	display: flex;
 	flex-direction: column;
+	font-size: 16px;
 }
 header {
 	background-color: #ffffff;	
@@ -27,18 +28,18 @@ h1 {
 	float: left;
 	margin-bottom: 0;
 	margin-top: 0;
-	margin-left: 100px;
-	font-size: 28px;
+	margin-left: 5%;
+	font-size: 2em;
 
 }
 h2 {
-	font-size: 24px;
+	font-size: 1.75em;
 	padding: 10px 10px 0px 10px;
 	margin-top: 0;
 	margin-bottom: 0;
 }
 h3 {
-	font-size: 20px;
+	font-size: 1.4em;
 	padding: 10px 10px 0px 10px;
 	margin: 0;
 }
@@ -66,32 +67,40 @@ footer {
 }
 input {
 	width: 100%;
-	height: 25px;
+	height: 2em;
+	padding: 0.2em 0;
 }
-td {
+.portContent {
 	padding: 15px;
-	position: relative;
+
 }
-td img{
+.portSpace {
+	position: relative;
+	overflow: auto;
+	float: left;
+	padding: 10px;
+}
+.portSpace img{
 	height: 250px;
 	width: 270px;
+
 }
-td h3 {
+.portSpace h3 {
 	background-color: #4aaaa5;
 	text-align: center;
-	font-size: 18px;
+	font-size: 1.3em;
 	color: #ffffff;
 	position: absolute;
 	bottom: 15px;
 	left: 0;
 	right: 0;
-	margin: 15px;
-	padding: 10px 0 10px 0;
+	margin: 10px;
+	padding: 10px 0;
 }
 .topPageNav {
 	padding: 15px;
 	float: right;
-	margin-right: 200px;
+	margin-right: 10%;
 }
 .topPageNav a:hover {
 	color: #ffffff;
@@ -100,8 +109,8 @@ td h3 {
 .main {
 	clear: both;
 	overflow: auto;
-	margin: 15px 100px 15px 100px;
-	width: 970px;
+	margin: 15px 5% 15px;
+	width: 960px;
 	flex: 1;
 }
 .content {
@@ -135,11 +144,13 @@ td h3 {
 
 #profileImg {
 	float: left;
+	width: 60%;
+	height: 60%;
 	padding-right: 10px;
 	padding-top: 10px;
 }
 #message {
-	height: 200px;
+	height: 10em;
 }
 #submitButton {
 	width: 120px;
@@ -156,4 +167,60 @@ td h3 {
 }
 /* {
 	outline: 1px dotted red;
+}*/
+
+@media screen and (max-width: 980px) {
+	body {
+		font-size: 14px;
+	}
+	h3 {
+		padding: 10px 0 0 0;
+	}
+	.socialNav a {
+		padding: 5px; 
+	}
+	.main {
+		width: 700px;
+	}
+	.content {
+		width: 480px;
+	}
+	.socialConnect {
+		width: 195px;
+		padding: 0 10px;
+	}
+	#profileImg {
+		height: 100%;
+		width: 100%;
+	}
+	.socialNav {
+		padding: 10px 0;
+	}
+	.socialIcon {
+		height: 35px;
+		width: 35px;
+	}
+	.socialIcon:hover {
+		height: 38px;
+		width: 38px;
+	}
+	.portSpace img{
+		height: 325px;
+		width: 351px;
+
+	}
+	.portSpace {
+		padding: 15px;
+	}
+	.portSpace h3 {
+		margin: 15px;
+	}
+}
+
+@media screen and (max-width: 768px) {
+	
+}
+
+@media screen and (max-width: 640px) {
+	
 }
